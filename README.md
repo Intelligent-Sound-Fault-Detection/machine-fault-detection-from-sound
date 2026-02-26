@@ -9,10 +9,10 @@ The system combines signal processing, machine learning, and hardware integratio
 ## 👥 Team Members
 
 | Name | Department | Role | Responsibilities |
-|------|-------------|------|------------------|
-| **Hüsna SARI** | Computer Engineering | Data preprocessing, Model design, feature extraction (MFCC, Spectrogram), evaluation, documentation,Backend & Optimization | AI & Project Coordination |
-| **Aleyna Erdoğan** | Computer Engineering | Recording interface development, data preprocessing support, API / web interface deployment, documentation support | Software & Interface Developer |
-| **İlayda Erdoğan** | Electrical-Electronics Engineering | Hardware & Signal Processing | Microphone setup, signal filtering, FFT analysis, ESP32 integration, real-time testing |
+|------|------------|------|-----------------|
+| **Hüsna SARI** | Computer Engineering | Data & ML Engineer | Model design, feature extraction (MFCC, Mel-Spectrogram, RMS, ZCR), baseline ML model setup (SVM, RandomForest, XGBoost), deep learning (CNN/Autoencoder) training & optimization, model evaluation, AI-related documentation, project coordination |
+| **Aleyna ERDOĞAN** | Computer Engineering | Software & Interface Developer | Recording interface development, data preprocessing support, support for ML models, CNN/Autoencoder training assistance, API/web interface deployment, documentation support |
+| **İlayda ERDOĞAN** | Electrical-Electronics Engineering | Hardware & Signal Processing | Microphone & sensor setup, signal filtering, FFT analysis, ESP32/hardware integration, real-time testing, technical documentation (schematics, workflow charts) |
 
 ---
 
