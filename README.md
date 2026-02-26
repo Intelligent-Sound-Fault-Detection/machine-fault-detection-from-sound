@@ -47,7 +47,7 @@ Real-time tests will be performed using recorded machine sounds via hardware dev
 
 | **Week** | **Date Range** | **Task** | **Responsible** | **Details** |
 |-----------|----------------|-----------|------------------|--------------|
-| **Week 1** | 21 Feb – 27 Feb | Literature review & method selection | Hüsna & Aleyna | Study DCASE, MIMII, ToyADMOS; decide on methodology |
+| **Week 1** | 21 Feb – 27 Feb | Literature review & method selection | Hüsna & Aleyna & İlayda | Study DCASE, MIMII, ToyADMOS; decide on methodology |
 |  |  | Project goals & planning | Hüsna & Aleyna & ilayda | Define objectives, weekly milestones, risk assessment |
 | **Week 2** | 28 Feb – 13 Mar | Microphone & sensor setup + Data collection | İlayda | Assemble microphone/sound card and record sounds from real/simulated faults |
 |  |  | Recording interface / software development | Aleyna | Develop Python/web-based sound recording interface |
