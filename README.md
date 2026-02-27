@@ -19,49 +19,59 @@ The system combines signal processing, machine learning, and hardware integratio
 ## ⚙️ Tech Stack
 - **Languages:** Python  
 - **Libraries:** Librosa, PyTorch, scikit-learn, NumPy, Matplotlib  
-- **Hardware:** ESP32, INMP441 Microphone, Raspberry Pi  
+- **Hardware:** ESP32, INMP441 Microphone
 - **Tools:** GitHub, VS Code, Jupyter Notebook, GitHub Projects (Kanban)
 
 ---
 
 ## 🧩 Datasets
-- [DCASE 2025 Challenge Dataset](https://dcase.community/challenge2025/task-first-shot-unsupervised-anomalous-sound-detection-for-machine-condition-monitoring)  
-- [MIMII Dataset](https://zenodo.org/records/3384388)  
-- [ToyADMOS 2025](https://dcase.community/documents/workshop2025/proceedings/DCASE2025Workshop_Harada_78.pdf)
+- **Primary Dataset:** [MIMII Dataset](https://zenodo.org/records/3384388)  
+- **Optional:** [DCASE 2025 Challenge](https://dcase.community/challenge2025/task-first-shot-unsupervised-anomalous-sound-detection-for-machine-condition-monitoring), [ToyADMOS 2025](https://dcase.community/documents/workshop2025/proceedings/DCASE2025Workshop_Harada_78.pdf)
+- **Optional:** [ToyADMOS 2025](https://dcase.community/documents/workshop2025/proceedings/DCASE2025Workshop_Harada_78.pdf)
+The **MIMII dataset** will be used for initial model training and evaluation.  
+Recorded sounds from the ESP32 microphone setup will be used for validation and real-world testing.
 
-Data are used for training and evaluation.  
-Real-time tests will be performed using recorded machine sounds via hardware devices.
-
+---
 
 ## 🧠 Methodology
-1. **Data Acquisition** – Collect or use existing machine sound datasets.  
-2. **Preprocessing** – Filter noise, normalize and segment sound signals.  
-3. **Feature Extraction** – Compute MFCC, Mel-spectrogram, and frequency domain features.  
-4. **Model Development** – Train machine learning and deep learning models.  
-5. **Hardware Integration** – Test model on ESP32/Raspberry Pi for real-time inference.  
-6. **Evaluation** – Use metrics like Accuracy, F1-score, and ROC-AUC to assess performance.
+1. **Data Acquisition** – Record sounds using ESP32 and use MIMII dataset for model training.  
+2. **Preprocessing** – Apply noise filtering, normalization, and segmentation.  
+3. **Feature Extraction** – Compute MFCC, Mel-Spectrogram, RMS, and ZCR features.  
+4. **Model Development** – Train and evaluate ML models (SVM, RandomForest, XGBoost) entirely on a computer.  
+5. **Evaluation** – Assess performance using Accuracy, F1-score, ROC-AUC, and visualize **Confusion Matrix**.  
+6. **Interface** – Build Streamlit web interface to run inference on the computer and visualize predictions.  
+7. **Preliminary Deep Learning Tests (Optional)** – Conduct limited CNN/Autoencoder experiments for future extension.
 
+---
 
+## 📅 Project Timeline (ESP32-only, Parallel Workflow)
+| Week | Date Range | Task | Responsible | Details |
+|------|------------|------|-------------|---------|
+| Week 1 | 21 Feb – 27 Feb | Literature review & dataset selection | Entire Team | Study DCASE & MIMII; finalize main dataset (MIMII) |
+|  |  | Project goals & Kanban setup | Hüsna & Aleyna | Define objectives, open GitHub Project, assign tasks |
+| Week 2 | 28 Feb – 13 Mar | Microphone & ESP32 setup | İlayda | Assemble INMP441 microphone with ESP32; test recording quality |
+|  |  | Data preprocessing scripts | Aleyna | Noise filtering, normalization, segmentation scripts |
+| Week 3 | 14 Mar – 27 Mar | Feature extraction | Hüsna & Aleyna | Extract MFCC, Mel-Spectrogram, RMS, ZCR; visualize features |
+|  |  | Frequency analysis | İlayda | Interpret ESP32 recordings in frequency domain |
+| Week 4 | 28 Mar – 3 Apr | Baseline ML model training | Hüsna & Aleyna | Train SVM, RandomForest, XGBoost on MIMII dataset |
+|  |  | ESP32 test recordings | İlayda | Record multiple machine sounds for validation dataset |
+| Week 5 | 4 Apr – 10 Apr | Model evaluation & visualization | Hüsna | Evaluate models (Accuracy, F1, ROC-AUC, Confusion Matrix) |
+|  |  | Streamlit interface prototype | Aleyna | Build interface to test ML predictions on computer |
+| Week 6 | 11 Apr – 17 Apr | Data collection & interface testing | İlayda & Aleyna | Record real-time sounds via ESP32 and integrate with Streamlit app |
+| Week 7 | 18 Apr – 24 Apr | Documentation & report writing | Hüsna & Aleyna | Prepare technical report, figures, workflow diagrams |
+|  |  | Hardware documentation | İlayda | Sensor connection diagrams, signal flow charts |
+| Week 8 | 25 Apr – 1 May | Presentation & optional CNN experiment | Entire Team | Record demo video, prepare slides, run preliminary CNN test (optional) |
 
-## 📅 Project Timeline (February–April 2026)
+---
 
-| **Week** | **Date Range** | **Task** | **Responsible** | **Details** |
-|-----------|----------------|-----------|------------------|--------------|
-| **Week 1** | 21 Feb – 27 Feb | Literature review & method selection | Hüsna & Aleyna & İlayda | Study DCASE, MIMII, ToyADMOS; decide on methodology |
-|  |  | Project goals & planning | Hüsna & Aleyna & ilayda | Define objectives, weekly milestones, risk assessment |
-| **Week 2** | 28 Feb – 13 Mar | Microphone & sensor setup + Data collection | İlayda | Assemble microphone/sound card and record sounds from real/simulated faults |
-|  |  | Recording interface / software development | Aleyna | Develop Python/web-based sound recording interface |
-| **Week 3** | 14 Mar – 27 Mar | Data preprocessing & feature extraction | Hüsna & Aleyna | Noise filtering, segmentation, extract MFCC, Mel-Spectrogram, RMS, ZCR; visualize results |
-|  |  | Frequency domain analysis | İlayda | Interpret frequency patterns and relate to fault types |
-| **Week 4** | 28 Mar – 3 Apr | Baseline ML models & Deep Learning setup | Aleyna | Train SVM, RandomForest, XGBoost; set up CNN/Autoencoder |
-|  |  | Deep Learning optimization | Hüsna & Aleyna | Optimize architecture, fine-tune parameters |
-| **Week 5** | 4 Apr – 10 Apr | Model evaluation | Hüsna | Evaluate models: Accuracy, F1, ROC-AUC, Precision-Recall |
-|  |  | Signal interpretation | İlayda | Analyze frequency distortions vs fault types |
-| **Week 6** | 11 Apr – 17 Apr | Hardware integration & real-time demo | İlayda | Deploy/test model on ESP32 / Raspberry Pi |
-|  |  | API / Interface deployment | Aleyna | Build web interface with FastAPI or Streamlit |
-| **Week 7** | 18 Apr – 24 Apr | Documentation & final report | Hüsna & Aleyna | Write report, UML diagrams, workflow documentation |
-|  |  | Technical documentation & diagrams | İlayda | Draw schematics, sensor diagrams, workflow charts |
-| **Week 8** | 25 Apr – 1 May | Presentation & demo video | Entire Team | Prepare poster, slides, and demo video |
+## ✅ Summary of Realistic Goals
+| Area | Target | Feasibility |
+|-------|---------|-------------|
+| Feature-based ML models | SVM / RF / XGBoost | ✅ Achievable |
+| Streamlit interface | Local demo for testing | ✅ Achievable |
+| ESP32 sound collection | Real-time audio input | ✅ Achievable |
+| Preliminary CNN test | Optional experimental stage | ⚠️ Optional / Stretch goal |
+
 
 
 ## 🗂️ Project Management
