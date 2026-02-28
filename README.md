@@ -48,7 +48,7 @@ Recorded sounds from the ESP32 microphone setup will be used for validation and 
 | Week | Date Range | Task | Responsible | Details |
 |------|------------|------|-------------|---------|
 | Week 1 | 21 Feb – 27 Feb | Literature review & dataset selection | Entire Team | Study DCASE & MIMII; finalize main dataset (MIMII) |
-|  |  | Project goals & Kanban setup | Hüsna & Aleyna | Define objectives, open GitHub Project, assign tasks |
+|  |  | Project goals & Kanban setup | Hüsna | Define objectives, open GitHub Project, assign tasks |
 | Week 2 | 28 Feb – 13 Mar | Microphone & ESP32 setup | İlayda | Assemble INMP441 microphone with ESP32; test recording quality |
 |  |  | Data preprocessing scripts | Aleyna | Noise filtering, normalization, segmentation scripts |
 | Week 3 | 14 Mar – 27 Mar | Feature extraction | Hüsna & Aleyna | Extract MFCC, Mel-Spectrogram, RMS, ZCR; visualize features |
