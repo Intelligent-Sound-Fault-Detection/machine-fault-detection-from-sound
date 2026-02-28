@@ -1,4 +1,4 @@
-/* ESP32 WiFi makine arıza */
+/* ESP32 WiFi Makine Arıza */
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
