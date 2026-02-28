@@ -17,9 +17,9 @@ The system combines signal processing, machine learning, and hardware integratio
 ---
 
 ## ⚙️ Tech Stack
-- **Languages:** Python  
+- **Languages:** Python, C++
 - **Libraries:** Librosa, PyTorch, scikit-learn, NumPy, Matplotlib  
-- **Hardware:** ESP32, INMP441 Microphone
+- **Hardware:** ESP32, INMP441 Microphone,MPU6050(Accelerometer)
 - **Tools:** GitHub, VS Code, Jupyter Notebook, GitHub Projects (Kanban)
 
 ---
