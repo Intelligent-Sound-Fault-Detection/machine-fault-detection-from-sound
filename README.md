@@ -45,22 +45,23 @@ Recorded sounds from the ESP32 microphone setup will be used for validation and 
 ---
 
 ## 📅 Project Timeline (ESP32-only, Parallel Workflow)
-| Week | Date Range | Task | Responsible | Details |
-|------|------------|------|-------------|---------|
-| Week 1 | 21 Feb – 27 Feb | Literature review & dataset selection | Entire Team | Study DCASE & MIMII; finalize main dataset (MIMII) |
-|  |  | Project goals & Kanban setup | Hüsna | Define objectives, open GitHub Project, assign tasks |
-| Week 2 | 28 Feb – 13 Mar | Microphone & ESP32 setup | İlayda | Assemble INMP441 microphone with ESP32; test recording quality |
-|  |  | Data preprocessing scripts | Aleyna | Noise filtering, normalization, segmentation scripts |
-| Week 3 | 14 Mar – 27 Mar | Feature extraction | Hüsna & Aleyna | Extract MFCC, Mel-Spectrogram, RMS, ZCR; visualize features |
-|  |  | Frequency analysis | İlayda | Interpret ESP32 recordings in frequency domain |
-| Week 4 | 28 Mar – 3 Apr | Baseline ML model training | Hüsna & Aleyna | Train SVM, RandomForest, XGBoost on MIMII dataset |
-|  |  | ESP32 test recordings | İlayda | Record multiple machine sounds for validation dataset |
-| Week 5 | 4 Apr – 10 Apr | Model evaluation & visualization | Hüsna | Evaluate models (Accuracy, F1, ROC-AUC, Confusion Matrix) |
-|  |  | Streamlit interface prototype | Aleyna | Build interface to test ML predictions on computer |
-| Week 6 | 11 Apr – 17 Apr | Data collection & interface testing | İlayda & Aleyna | Record real-time sounds via ESP32 and integrate with Streamlit app |
-| Week 7 | 18 Apr – 24 Apr | Documentation & report writing | Hüsna & Aleyna | Prepare technical report, figures, workflow diagrams |
-|  |  | Hardware documentation | İlayda | Sensor connection diagrams, signal flow charts |
-| Week 8 | 25 Apr – 1 May | Presentation & optional CNN experiment | Entire Team | Record demo video, prepare slides, run preliminary CNN test (optional) |
+
+| Date Range | Task | Responsible | Details |
+|------------|------|-------------|---------|
+| 21 Feb – 27 Feb | Literature review & dataset selection | Entire Team | Study DCASE & MIMII; finalize main dataset (MIMII) |
+| 21 Feb – 27 Feb | Project goals & Kanban setup | Hüsna | Define objectives, open GitHub Project, assign tasks |
+| 28 Feb – 13 Mar | Microphone & ESP32 setup | İlayda | Assemble INMP441 microphone with ESP32; test recording quality |
+| 28 Feb – 13 Mar | Data preprocessing scripts | Aleyna & Hüsna | Noise filtering, normalization, segmentation scripts |
+| 14 Mar – 27 Mar | Feature extraction | Hüsna & Aleyna | Extract MFCC, Mel-Spectrogram, RMS, ZCR; visualize features |
+| 14 Mar – 27 Mar | Frequency analysis | İlayda | Interpret ESP32 recordings in frequency domain |
+| 28 Mar – 3 Apr | Baseline ML model training | Hüsna & Aleyna | Train SVM, RandomForest, XGBoost on MIMII dataset |
+| 28 Mar – 3 Apr | ESP32 test recordings | İlayda | Record multiple machine sounds for validation dataset |
+| 4 Apr – 10 Apr | Model evaluation & visualization | Hüsna | Evaluate models (Accuracy, F1, ROC-AUC, Confusion Matrix) |
+| 4 Apr – 10 Apr | Streamlit interface prototype | Aleyna | Build interface to test ML predictions on computer |
+| 11 Apr – 17 Apr | Data collection & interface testing | İlayda & Aleyna | Record real-time sounds via ESP32 and integrate with Streamlit app |
+| 18 Apr – 24 Apr | Documentation & report writing | Hüsna & Aleyna | Prepare technical report, figures, workflow diagrams |
+| 18 Apr – 24 Apr | Hardware documentation | İlayda | Sensor connection diagrams, signal flow charts |
+| 25 Apr – 1 May | Presentation & optional CNN experiment | Entire Team | Record demo video, prepare slides, run preliminary CNN test (optional) |
 
 ---
 
